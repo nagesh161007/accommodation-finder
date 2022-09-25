@@ -2,35 +2,41 @@
 
 ## Project description 
 
-The objective of this project is to create a database which helps students looking for temporary and permanent accommodations. Users/Students (hosts) will be able to list their apartments with the availability dates and students can search for rooms based on preferences, make reservations for temporary accommodation and contact the host for permanent accommodations.
+The goal of this project is to build a database that will aid students looking for both temporary and permanent accommodation. Users/Students (hosts) can publish their apartments with the dates it will be available, and students can search for rooms based on their preferences make reservations for temporary accommodation, and contact with the host for permanent accommodation.
 
 
 ### Brief Overview
 
-Hosts will be able to list their already rented apartment for permanent accommodation and temporary accommodation with their preferences for house members, apartment photos, video tour, move-in dates house rules, nearby utilities stores and way of commute to university. Users will be able to find permanent/temporary accommodation by filtering preferences based on room type, hall spot, members of the house with matching courses, university. Users will be able to view details about members what course they are studying, state information, languages, contact information which will be viewed by approval from the host. Users looking for accommodation will be categorized based on a subscription model with free and premium plans which limits them to get contact information of the host of the property
+Hosts will be able to offer their currently rented apartments for permanent housing and short-term housing with their preferences for housemates, apartment images, a video tour, move-in dates, house rules, nearby utilities stores, and method of commuting to school. By using filters based on preferences for room type, hall place, members of the house with matching courses, and university, users will be able to locate permanent or temporary accommodation. Users will be able to view information on members, such as the courses they are enrolled in, their states, their languages, and their contact information, subject to host approval. Users looking for lodging are divided into free and premium subscription plans, which only allow them to access the contact details of the property's host.
 
 ### Features 
 
-1.Host will be able to host their accommodations with move in dates,rent for the person, number of vacancy spots, photos,apartment video tour, address, room spot type, apartment info (bed and bath information),laundry access, preferences for house members (state, food, language, course, university, no smoking/Alcohol) 
-2. Users can narrow their search for rooms depending on features like location, and dates of stay, and preference on the listings on both temporary and permanent.
-3. Accommodations will be displayed in accordance with user saved preferences and dates of availability.
-4. Users will be able to book and cancel temporary accommodations and make payment for their stay.
-5. For permanent accommodation users will be able to contact the host with contact information with limits based on time frame on no of properties contacted based on the user subscription plan.
-6. Users can save accommodation listings to be viewed later.
-7. Notifications for new listing to users if the property matches with the user preferences 
-8. Temporary accommodations can be reviewed with ratings and comments
-
+1.Host will be able to host their accommodations with move-in dates, rent for the person, number of open spots, photos, an apartment video tour, address, room spot type, apartment info (bed and bath information), laundry access, and preferences for house members (state, food, language, course, university, and no smoking/alcohol).
+2. Users can focus their search for rooms based on attributes including location, dates of stay, and preferences for both temporary and permanent postings.
+3. Based on the user's recorded choices and available dates, accommodations will be displayed.
+4. Users will be able to book and cancel temporary accommodation as well as pay for their stay.
+5. For permanent accommodation, users will have access to the host's contact information, but there will be time and property contact limit restrictions depending on the user subscription plan.
+6. Users can bookmark accommodation listings to view at a later time.
+7. Users will be notified of new listings if the property matches their criteria.
+8. Reviews of temporary accommodations can include ratings and remarks
+9. Rent will be categorized based on the spot type, sharing, private rooms with brokerage, deposit if applicable
+10. Members of the house can be either user or if signup as user which will be matched based on email and contact information
+11. Students looking for temporary and permanent can also post their requests 
 
 ### Entities Overview
 
-1. Each listing will have information related to accommodation type, room type(bed room, shared, private or hall spot), number of guests it can accommodate, vacancies, price, address, photos, amenities and rating and reviews (optional), cancellation policy, gender preference, contact information, listing type
+1. Each listing will have information related to accommodation type, rent, room type(bed room, shared, private or hall spot), number of guests it can accommodate, vacancies, price, address, photos, amenities and rating and reviews (optional), cancellation policy (temporary accommodation), gender preference, contact information, listing type, house rules
 2. Users can be of two types either - host who will post accommodations and user who can view and book accommodations
-3.Users will have first name, last name, email id, mobile number, University, course ,valid proof (admit letter, i20), profile picture (optional).
+3. Users will have first name, last name, email id, mobile number, University, course ,valid proof (admit letter, i20), profile picture (optional).
 4. Temporary accommodation bookings will have booking_id, checkin and checkout dates, amount paid, cancelable, address and contact information
 5. Wishlist to bookmark listings with listing id
-6. Notification/ Alerts when new accommodations which are matching user preference
-7. Payment table which contains amount payment type, amount paid, transaction time.
-8. Members of the house can be either user or if signup as user which will be matched based on email and contact information
+6. User preference with pincode, radius, university, course, room type, rent range and other amenities
+7. Notifications with accommodation listing info when new accommodations which are matching user preference - notification id, read.
+8. Payment table which contains amount payment type, amount paid, transaction time.
+9. subscription model - plan type, expiry date, subscription amount
+10. Number of properties contacted for permanent accommodation by user
+11. room members (non user) which will be added by accomodation host - university, course, state, language.
+12. Accomodation request post - userid, postingid, contact, preferences
 
 ### Project Members
 
