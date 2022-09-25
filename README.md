@@ -38,6 +38,13 @@ Hosts will be able to offer their currently rented apartments for permanent hous
 11. room members (non user) which will be added by accomodation host - university, course, state, language.
 12. Accomodation request post - userid, postingid, contact, preferences
 
+
+
+#### sample tables
+
+https://lucid.app/lucidchart/4e48e608-4331-4bf8-9a1b-17dc185a4e8a/edit?invitationId=inv_3812ce17-7ced-4a98-bd41-0c0def70bd49#
+
+
 ### Project Members
 
 Akshitha Kamshetty
