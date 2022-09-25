@@ -1,4 +1,4 @@
-# Accomodation Finder
+# Accommodation Finder
 
 ## Project description 
 
@@ -35,8 +35,8 @@ Hosts will be able to offer their currently rented apartments for permanent hous
 8. Payment table which contains amount payment type, amount paid, transaction time.
 9. subscription model - plan type, expiry date, subscription amount
 10. Number of properties contacted for permanent accommodation by user
-11. room members (non user) which will be added by accomodation host - university, course, state, language.
-12. Accomodation request post - userid, postingid, contact, preferences
+11. room members (non user) which will be added by accommodation host - university, course, state, language.
+12. Accommodation request post - userid, postingid, contact, preferences
 
 
 
@@ -50,4 +50,4 @@ https://lucid.app/lucidchart/4e48e608-4331-4bf8-9a1b-17dc185a4e8a/edit?invitatio
 Akshitha Kamshetty
 Nageshwara sairam
 
-Github repository link - https://github.com/nagesh161007/accomodation-finder
+Github repository link - https://github.com/nagesh161007/accommodation-finder
