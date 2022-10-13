@@ -43,10 +43,10 @@ Github repository link - https://github.com/nagesh161007/accommodation-finder
 ## Temporary/Permanent Accommodation Finder
 
 1.List available temporary accommodations between the dates of Oct 15-2022 to Oct-20-2022 for 2 people
-2.List permanent accommodations with private room sorting by lowest rent per person
-3.List permanent accommodations with roommate pursuing MS in Information systems
-4.Get total amount from temporary accommodation bookings within the last week
-5.Get permanent accommodations or permanent accommodations near northeastern university
+2.List permanent accommodations with private room sorting by lowest rent
+3.List permanent accommodations with students pursuing MS in Information systems
+4.Get total rent from temporary accommodation bookings within the last week
+5.Get temporary accommodations or permanent accommodations near northeastern university
 6.List user’s recent contact enquiries for accomodations with the hosts.
 7.Display user’s wishlist of temporary and permanent accommodations.
 8.Get number of users in the free subscription plan in accommodation finder
