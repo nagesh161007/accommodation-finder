@@ -1,27 +1,16 @@
 # Accommodation Finder
 
-## Project description 
+## Project description
 
 The goal of this project is to build a database that will aid students looking for both temporary and permanent accommodation. Users/Students (hosts) can publish their apartments with the dates it will be available, and students can search for rooms based on their preferences make reservations for temporary accommodation, and contact with the host for permanent accommodation.
-
 
 ### Brief Overview
 
 Hosts will be able to offer their currently rented apartments for permanent housing and short-term housing with their preferences for housemates, apartment images, a video tour, move-in dates, house rules, nearby utilities stores, and method of commuting to school. By using filters based on preferences for room type, hall place, members of the house with matching courses, and university, users will be able to locate permanent or temporary accommodation. Users will be able to view information on members, such as the courses they are enrolled in, their states, their languages, and their contact information, subject to host approval. Users looking for lodging are divided into free and premium subscription plans, which only allow them to access the contact details of the property's host.
 
-### DB Functionalities 
+### DB Functionalities
 
-1.Host will be able to host their accommodations with move-in dates, rent for the person, number of open spots, photos, an apartment video tour, address, room spot type, apartment info (bed and bath information), laundry access, and preferences for house members (state, food, language, course, university, and no smoking/alcohol).
-2. Users can focus their search for rooms based on attributes including location, dates of stay, and preferences for both temporary and permanent postings.
-3. Based on the user's recorded choices and available dates, accommodations will be displayed.
-4. Users will be able to book and cancel temporary accommodation as well as pay for their stay.
-5. For permanent accommodation, users will have access to the host's contact information, but there will be time and property contact limit restrictions depending on the user subscription plan.
-6. Users can bookmark accommodation listings to view at a later time.
-7. Users will be notified of new listings if the property matches their criteria.
-8. Reviews of temporary accommodations can include ratings and remarks
-9. Rent will be categorized based on the spot type, sharing, private rooms with brokerage, deposit if applicable
-10. Members of the house can be either user or if signup as user which will be matched based on email and contact information
-11. Students looking for temporary and permanent can also post their requests 
+1.Host will be able to host their accommodations with move-in dates, rent for the person, number of open spots, photos, an apartment video tour, address, room spot type, apartment info (bed and bath information), laundry access, and preferences for house members (state, food, language, course, university, and no smoking/alcohol). 2. Users can focus their search for rooms based on attributes including location, dates of stay, and preferences for both temporary and permanent postings. 3. Based on the user's recorded choices and available dates, accommodations will be displayed. 4. Users will be able to book and cancel temporary accommodation as well as pay for their stay. 5. For permanent accommodation, users will have access to the host's contact information, but there will be time and property contact limit restrictions depending on the user subscription plan. 6. Users can bookmark accommodation listings to view at a later time. 7. Users will be notified of new listings if the property matches their criteria. 8. Reviews of temporary accommodations can include ratings and remarks 9. Rent will be categorized based on the spot type, sharing, private rooms with brokerage, deposit if applicable 10. Members of the house can be either user or if signup as user which will be matched based on email and contact information 11. Students looking for temporary and permanent can also post their requests
 
 ### Entities Overview
 
@@ -38,12 +27,9 @@ Hosts will be able to offer their currently rented apartments for permanent hous
 11. room members (non user) which will be added by accommodation host - university, course, state, language.
 12. Accommodation request post - userid, postingid, contact, preferences
 
-
-
 #### sample tables
 
 https://lucid.app/lucidchart/4e48e608-4331-4bf8-9a1b-17dc185a4e8a/edit?invitationId=inv_3812ce17-7ced-4a98-bd41-0c0def70bd49#
-
 
 ### Project Members
 
@@ -51,3 +37,32 @@ Akshitha Kamshetty
 Nageshwara sairam
 
 Github repository link - https://github.com/nagesh161007/accommodation-finder
+
+# Assignment 2
+
+## Temporary/Permanent Accommodation Finder
+
+1.List available temporary accommodations between the dates of Oct 15-2022 to Oct-20-2022 for 2 people
+2.List permanent accommodations with private room sorting by lowest rent
+3.List permanent accommodations with students pursuing MS in Information systems
+4.Get total rent from temporary accommodation bookings within the last week
+5.Get temporary accommodations or permanent accommodations near northeastern university
+6.List user’s recent contact enquiries for accomodations with the hosts.
+7.Display user’s wishlist of temporary and permanent accommodations.
+8.Get number of users in the free subscription plan in accommodation finder
+9.Display accommodations with preferences from specific country (example - India) and language (Tamil, Hindi)
+10.List accommodations with no smoking and no drinking house rules.
+11.List temporary accommodations sorting by highest rating and reviews
+12.List 2 bed 1 bath permanent accommodations with laundry facility
+13.List permanent accommodations with private room vacancy with rent between 650 - 850
+14.List accommodations with shops nearby with in 0.3 miles
+15.List number of visa approved users from MS Information systems looking for permanent accommodation
+
+Project Description - https://github.com/nagesh161007/accommodation-finder
+
+### Project Members
+
+Akshitha Kamshetty
+Nageshwara sairam
+
+google docs link - https://docs.google.com/document/d/1Oj2fzd9U7lhVq52BtaAzpWVz1b1zCMz5FAPm917ADdE/edit
