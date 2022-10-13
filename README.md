@@ -59,3 +59,10 @@ Github repository link - https://github.com/nagesh161007/accommodation-finder
 15.List number of visa approved users from MS Information systems looking for permanent accommodation
 
 Project Description - https://github.com/nagesh161007/accommodation-finder
+
+### Project Members
+
+Akshitha Kamshetty
+Nageshwara sairam
+
+google docs link - https://docs.google.com/document/d/1Oj2fzd9U7lhVq52BtaAzpWVz1b1zCMz5FAPm917ADdE/edit
