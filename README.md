@@ -57,16 +57,15 @@ Github repository link - https://github.com/nagesh161007/accommodation-finder
 13.List permanent accommodations with private room vacancy with rent between 650 - 850
 14.List accommodations with shops nearby with in 0.3 miles
 15.List number of visa approved users from MS Information systems looking for permanent accommodation
-16.List the no of female/male/mixed  genders rooms available near the entered location.
+16.List the no of female/male/mixed genders rooms available near the entered location.
 17.List the accomodationst grouped by a specific amenities .
 18.List the room members from a specific state.
 19.List all the rooms within the certain university for a specific state.
 20.List all the subscription models.
 21.List all the check-in dates on the particular dates by permanent/temporary accomadation.
 22.List of any specific amenities available in any given range of the location.
-23.List of all the room members  coming for a specific course
+23.List of all the room members coming for a specific course
 24.List of all the pictures of the people who are renting for the accomidation.
-
 
 Project Description - https://github.com/nagesh161007/accommodation-finder
 
@@ -76,3 +75,22 @@ Akshitha Kamshetty
 Nageshwara sairam
 
 google docs link - https://docs.google.com/document/d/1Oj2fzd9U7lhVq52BtaAzpWVz1b1zCMz5FAPm917ADdE/edit
+
+# Assignment 3
+
+Web Scraping Twitter
+
+## Database physical model
+
+<img src="./diagrams/accomodationfinder.png">
+
+## ER Diagram
+
+### Hospital Admin Sequence Diagram
+
+<img src="./diagrams/ER Diagram.svg
+">
+
+### UML Diagram
+
+<img src="./diagrams/AccomodationFinderUML.svg">
