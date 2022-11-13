@@ -44,4 +44,38 @@ LIMIT 2;
 
 SELECT t.tweet_text, t.tweet_id, m.like_count
 FROM Tweets AS t
-INNER JOIN Metrics as m on t.tweet_id = m.tweet_id ORDER BY m.like_count,m.reply_count, m.retweet_count ASC;
+INNER JOIN Metrics as m on t.tweet_id = m.tweet_id ORDER BY m.like_count DESC;
+
+
+
+
+-- Project Twitter Model Use case Queries
+
+-- 1. List Permanent accommodations posted by MS DAE students
+Select tweet_id, tweet_text from Tweets where tweet_author_id in (SELECT tu.twitter_user_id from TwitterUser as tu 
+INNER JOIN AccommodationUser as au on tu.twitter_handle = au.tweet_handle
+where au.course= 'MS DAE');
+
+-- 2. List Temporary accomodations with high rating (likes)
+
+SELECT * from TemporaryAccomodation where tweet_id = (SELECT t.tweet_id
+FROM Tweets AS t
+INNER JOIN Metrics as m on t.tweet_id = m.tweet_id ORDER BY m.like_count DESC LIMIT 1);
+
+-- 3. List tweethandles of tweets containing Huntington in the address field
+
+select tweet_text, tweet_author_id from Tweets where tweet_id in 
+(select tweet_id from PermanentAccommodation where LOWER(address) LIKE  '%hunt%');
+
+-- 4. List tweets with temporary accomodations availability between Nov and December with per day rent between 10 - 30
+
+select au.email, au.phone from AccommodationUser as au INNER JOIN TwitterUser as tu on au.tweet_handle = tu.twitter_handle where tu.twitter_user_id in 
+(select tweet_author_id from Tweets where tweet_id in (select tweet_id from TemporaryAccomodation where  rent between 15 AND 25));
+
+
+-- 5. List twitter users who posted Permanets accommodations tweets with between 1-Nov and 1-December
+
+
+select tu.twitter_user_id, tu.twitter_handle from Tweets t INNER JOIN TwitterUser tu on tu.twitter_user_id = t.tweet_author_id in (
+select tweet_id from PermanentAccommodation where available_start BETWEEN '2022-11-01' AND '2033-12-1' AND available_end BETWEEN '2022-11-01' AND '2033-12-1');
+
