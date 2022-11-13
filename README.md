@@ -94,3 +94,27 @@ Web Scraping Twitter
 ### UML Diagram
 
 <img src="./diagrams/AccomodationFinderUML.svg">
+
+## Project Structure
+
+#### twitter bot
+
+app folder contains twitter bot which scraps twitter and parses and populates the database
+
+`cd app`
+
+`npm install`
+
+Create .env file with
+
+DB_USER_NAME="XXXX"
+DB_PASSWORD="XXXXX"
+BEARER_TOKEN="Bearer XXXXXXXXXXXXX"
+
+#### queries
+
+All twitter DB queries are inside the queries folder and DB setup is inside the sql folder
+
+#### sql dump
+
+I have added the sql database migration files exported dump inside the database_dump. You can import in mysqlworkbench to run without
