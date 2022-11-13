@@ -88,3 +88,29 @@ select au.email, au.phone from AccommodationUser as au INNER JOIN TwitterUser as
 select tu.twitter_user_id, tu.twitter_handle from Tweets t INNER JOIN TwitterUser tu on tu.twitter_user_id = t.tweet_author_id in (
 select tweet_id from PermanentAccommodation where available_start BETWEEN '2022-11-01' AND '2033-12-1' AND available_end BETWEEN '2022-11-01' AND '2033-12-1');
 
+
+
+-- 6. List all permanent accommodations with start date greater than 1-December
+
+Select * from PermanentAccomodation where available_start '2022-11-20';
+
+-- 7. List contact information of person who has listed permanent accommodations with bed count > 1
+
+Select * from PermanentAccomodation pa INNER JOIN Tweets tw ON pa.tweet_id=tw.tweet_id WHERE pa.bed=1 AND tw.tweet_author_id= (enter your id);
+
+-- 8. List of all the room that cost Permanenet Accommodation greater than 400 
+
+Select * from TemporaryAccomodation where rent>=400;
+
+-- 9. List of all the apartments in the bolyston street
+
+
+SELECT rent, location, bed, gender, available_start, available_end, tweet_id FROM (SELECT rent, location, bed, gender, available_start, available_end, tweet_id from PermanentAccomodation UNION 
+SELECT rent, location, bed, gender, available_start, available_end, tweet_id FROM TemporaryAccomodation)
+Where location LIKE  '%bolyston%';
+
+
+---10. change the price list below 500 dollars as 250 dollars in Temporary accommodations
+
+Update TemporaryAccomodation SET rent = 250 where rent < 500;
+
