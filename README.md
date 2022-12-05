@@ -88,8 +88,7 @@ Web Scraping Twitter
 
 ### Hospital Admin Sequence Diagram
 
-<img src="./diagrams/ER Diagram.svg
-">
+<img src="./diagrams/ER Diagram.svg">
 
 ### UML Diagram
 
