@@ -168,5 +168,55 @@ I have added the sql database migration files exported dump inside the database_
 
 Assignment 3 - Gathering, Scraping, Munging and Cleaning Data
 
+Tables 
+
+Permanent Accommodation - permanent accommodations posted in whatsapp groups with rent, starting date,  roomtype, gender, location and the user contact and name who posted it.
+
+Temporary Accommodation - temporary accommodations posted in whatsapp groups with rent, starting date, ending data,  roomtype, gender, location and the user contact and name who posted it.
+
+User - user name and user contact which is used as primary key for identifying which user posted the accommodation
+
+
+Data gathering 
+
 
 Dataset - Realworld data for Temporary and permanent accommodation csv file gathered from whatsapp groups, google forms and scrapped from websites for permanent accommodations
+
+Datasets gathered as csv files from whatsapp are imported as pandas dataframe to clean and validate
+
+ permanent and temporary accommodations dataframe shape and info are displayed for data types
+
+Rent column in data frame are cleaned by removing dollar symbols and trailing spaces and made as type int for both temporary and permanent accommodations
+
+Missing values for rent are filled with mean value from the data frame 
+
+Missing values for str are replaced with empty strings 
+
+After all data is cleaned all dataframe columns are casted into respective data types
+
+
+Data visualisation 
+
+
+Data is visualised with matplotlib libary on four use cases
+
+Temporary accommodation use case
+
+1. Number of temporary accommodation based on locality with histgrams
+
+2. Accommodation availability based on gender using piechart
+
+3. Accommodation availbilty based on spot type using piechart
+
+4. Scatter plot to visualise the rent range distribution accross localities
+
+
+
+Importing data to database
+
+Data is inserted to respective tables from their dataframes using sqlalchemy
+
+
+Updated database Schema
+
+<img src="./diagrams/accommodationDB.png">
