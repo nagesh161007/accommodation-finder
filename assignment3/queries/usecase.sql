@@ -27,5 +27,22 @@ select pa.contact, u.name from permanentaccommodation as pa inner join user as u
 
 select * from permanentaccommodation where gender = 'GIRL' and rent < 600 and start BETWEEN '2022-12-15' AND '2022-12-31' and roomtype = 'SHARED'
 
+-- 6. List names the users who posted temporary accomodation for female 
+
+select usr.name from user usr inner join temporaryaccommodation tmp on usr.contact = tmp.number where tmp.gender='GIRL';
+
+-- 7. List contact of user from permanent accommodations with rent greater than 500
+
+select pac.contact, usr.name from user usr inner join permanentaccommodation pac on usr.contact = pac.contact where pac.rent > 500;
 
 
+-- 8. List the id with contact no in permanent accommodation with start date after December
+select pac.contact, pac.address from user usr inner join permanentaccommodation pac on usr.contact = pac.contact where pac.start >2022-12-31;
+
+
+-- 9. List the names in permanent accommodation with 1 bed type
+
+select pac.contact, pac.address from user usr inner join permanentaccommodation pac on usr.contact = pac.contact where pac.bed=1;
+
+-- 10. List the names of the temporary accommodation with descriptions
+select usr.name from user usr inner join temporaryaccommodation tmp on usr.contact = tmp.number where tmp.description is not null;
