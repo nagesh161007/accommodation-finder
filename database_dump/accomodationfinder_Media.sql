@@ -1,0 +1,54 @@
+-- MySQL dump 10.13  Distrib 8.0.31, for macos12 (x86_64)
+--
+-- Host: localhost    Database: accomodationfinder
+-- ------------------------------------------------------
+-- Server version	8.0.31
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `Media`
+--
+
+DROP TABLE IF EXISTS `Media`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Media` (
+  `media_key` varchar(100) NOT NULL,
+  `media_url` varchar(100) NOT NULL,
+  `tweet_id` varchar(150) NOT NULL,
+  PRIMARY KEY (`media_key`),
+  KEY `Tweet_id_media` (`tweet_id`),
+  CONSTRAINT `Tweet_id_media` FOREIGN KEY (`tweet_id`) REFERENCES `Tweets` (`tweet_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Media`
+--
+
+LOCK TABLES `Media` WRITE;
+/*!40000 ALTER TABLE `Media` DISABLE KEYS */;
+INSERT INTO `Media` VALUES ('3_1590933793988378624','https://twitter.com/16_foden/status/1590933806558883840/photo/1','1590933806558883840'),('3_1590933794000887809','https://twitter.com/16_foden/status/1590933806558883840/photo/1','1590933806558883840'),('3_1590935214775308291','https://twitter.com/16_foden/status/1590935236766228480/photo/1','1590935236766228480'),('3_1590935214779400192','https://twitter.com/16_foden/status/1590935236766228480/photo/1','1590935236766228480'),('3_1590935534712545281','https://twitter.com/funstack_dev/status/1590935662714585089/photo/1','1590935662714585089'),('3_1590935907456225283','https://twitter.com/funstack_dev/status/1590935998913187840/photo/1','1590935998913187840'),('3_1590943639399800832','https://twitter.com/ArizonaHotGuy/status/1590943722984067072/photo/1','1590943722984067072'),('3_1591148428440002560','https://twitter.com/sneha_g1610/status/1591148522992242701/photo/1','1591148522992242701'),('3_1591148428456824844','https://twitter.com/sneha_g1610/status/1591148522992242701/photo/1','1591148522992242701');
+/*!40000 ALTER TABLE `Media` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-11-12 17:53:33
