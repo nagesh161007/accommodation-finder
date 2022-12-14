@@ -1,5 +1,5 @@
 -- 1. List username and contact information of users who posted temporary accommodation with rent less than 20
-create view cheapaccommodations AS select u.contact, u.name, ta.* from user as u inner join temporaryaccommodation as ta
+create view cheapaccommodations as select u.name ,ta.* from User as u inner join Temporaryaccommodation as ta
 on ta.userid = u.userid where ta.rent < 20;
 
 select * from cheapaccommodations;
@@ -50,6 +50,13 @@ select * from contactlist;
 create view decemberseason_vacacies as select * from permanentaccommodation where gender = 'GIRL' and rent < 600 and startdate BETWEEN '2022-12-15' AND '2022-12-31' and room = 'SHARED'
 
 select * from decemberseason_vacacies;
+
+-- 6. Select all northeastern university students
+
+create view northeasternstudens as select * from user where universityId= 1;
+
+select * from northeasternstudens;
+ 
 
 -- select * from permanentaccommodation where gender = 'GIRL' and rent < 600 and start BETWEEN '2022-12-15' AND '2022-12-31' and roomtype = 'SHARED'
 
