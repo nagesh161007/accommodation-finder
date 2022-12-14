@@ -1,6 +1,6 @@
 -- 1. List username and contact information of users who posted temporary accommodation with rent less than 20
 create view cheapaccommodations AS select u.contact, u.name, ta.* from user as u inner join temporaryaccommodation as ta
-on ta.number = u.contact where ta.rent < 20;
+on ta.userid = u.userid where ta.rent < 20;
 
 select * from cheapaccommodations;
 
