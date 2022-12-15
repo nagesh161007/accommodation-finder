@@ -136,3 +136,48 @@ VALUES
 (<{userid: }>,
 <{name: }>,
 <{contact: }>);
+
+
+
+INSERT INTO `accommodationDB`.`temporaryaccommodation`
+(`id`,
+`address`,
+`locality`,
+`rent`,
+`start`,
+`end`,
+`gender`,
+`name`,
+`number`,
+`vacancy`,
+`spot`,
+`description`)
+VALUES
+(383, '13 tabor pl Brookline ', 'Brookline ', 20, '2022-12-27 00:00:00', '2023-01-13 00:00:00', 'BOY', 'Hemanthhhh', 8573905572, 2, 'PRIVATE', "example description" );
+
+
+
+
+
+
+-- Example Insert queries
+
+INSERT INTO `accommodationDB`.`permanentaccommodation`
+(`index`,
+`location`,
+`address`,
+`rent`,
+`roomtype`,
+`gender`,
+`vacancy`,
+`bed`,
+`bath`,
+`apartment_type`,
+`start`,
+`end`,
+`spot`,
+`name`,
+`contact`,
+`description`)
+VALUES
+(1000, "Calumet Street ,Mission Hill, Boston, MA ", "Mission Hill", 512, 'SHARED', 'GIRL', 1, 3, 1, 'GIRL', '2022-12-31 00:00:00', '2023-01-23 00:00:00', 'room', 'Neha', 16172384663, "- Safe location around NEU\n\n🚘Accessible by Red Eye\n🚇6 minute walk to Green line\n🏬20 minute walk to NEU ( 1.1 mile )\n🍲 10 minutes walking to Punjab mini market \n\n- We’re all non vegetarians \n- occasional drinks allowed \n- Non smokers");
