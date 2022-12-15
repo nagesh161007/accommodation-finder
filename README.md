@@ -220,3 +220,17 @@ Data is inserted to respective tables from their dataframes using sqlalchemy
 Updated database Schema
 
 <img src="./diagrams/accommodationDB.png">
+
+
+# Assignment 4 
+
+Data base normalization
+
+
+https://docs.google.com/document/d/1g8-yVlcQFutDTneYTVYy14SL6dA5yaIXRBy0p1E3tAE/edit
+
+
+Normalized table visualisation 
+
+
+<img src="./assignment4/diagrams/accommodationDatabase.png">
