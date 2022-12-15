@@ -220,3 +220,8 @@ Data is inserted to respective tables from their dataframes using sqlalchemy
 Updated database Schema
 
 <img src="./diagrams/accommodationDB.png">
+
+
+# Final Project Report
+
+https://docs.google.com/document/d/1q2sUn1s0oxJ158KLXj8jTzBPUKUvWz9NXUiYNeZ4GzY/edit
