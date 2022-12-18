@@ -10,17 +10,7 @@ Hosts will be able to offer their currently rented apartments for permanent hous
 
 ### DB Functionalities
 
-1.Host will be able to host their accommodations with move-in dates, rent for the person, number of open spots, photos, an apartment video tour, address, room spot type, apartment info (bed and bath information), laundry access, and preferences for house members (state, food, language, course, university, and no smoking/alcohol). 
-2. Users can focus their search for rooms based on attributes including location, dates of stay, and preferences for both temporary and permanent postings. 
-3. Based on the user's recorded choices and available dates, accommodations will be displayed. 
-4. Users will be able to book and cancel temporary accommodation as well as pay for their stay. 
-5. For permanent accommodation, users will have access to the host's contact information, but there will be time and property contact limit restrictions depending on the user subscription plan. 
-6. Users can bookmark accommodation listings to view at a later time.
-7. Users will be notified of new listings if the property matches their criteria. 
-8. Reviews of temporary accommodations can include ratings and remarks 
-9. Rent will be categorized based on the spot type, sharing, private rooms with brokerage, deposit if applicable 
-10. Members of the house can be either user or if signup as user which will be matched based on email and contact information 
-11. Students looking for temporary and permanent can also post their requests
+1.Host will be able to host their accommodations with move-in dates, rent for the person, number of open spots, photos, an apartment video tour, address, room spot type, apartment info (bed and bath information), laundry access, and preferences for house members (state, food, language, course, university, and no smoking/alcohol). 2. Users can focus their search for rooms based on attributes including location, dates of stay, and preferences for both temporary and permanent postings. 3. Based on the user's recorded choices and available dates, accommodations will be displayed. 4. Users will be able to book and cancel temporary accommodation as well as pay for their stay. 5. For permanent accommodation, users will have access to the host's contact information, but there will be time and property contact limit restrictions depending on the user subscription plan. 6. Users can bookmark accommodation listings to view at a later time. 7. Users will be notified of new listings if the property matches their criteria. 8. Reviews of temporary accommodations can include ratings and remarks 9. Rent will be categorized based on the spot type, sharing, private rooms with brokerage, deposit if applicable 10. Members of the house can be either user or if signup as user which will be matched based on email and contact information 11. Students looking for temporary and permanent can also post their requests
 
 ### Entities Overview
 
@@ -162,41 +152,35 @@ All twitter DB queries are inside the queries folder and DB setup is inside the 
 
 I have added the sql database migration files exported dump inside the database_dump. You can import in mysqlworkbench to run without
 
-
 ### Assignment 3
-
 
 Assignment 3 - Gathering, Scraping, Munging and Cleaning Data
 
-Tables 
+Tables
 
-Permanent Accommodation - permanent accommodations posted in whatsapp groups with rent, starting date,  roomtype, gender, location and the user contact and name who posted it.
+Permanent Accommodation - permanent accommodations posted in whatsapp groups with rent, starting date, roomtype, gender, location and the user contact and name who posted it.
 
-Temporary Accommodation - temporary accommodations posted in whatsapp groups with rent, starting date, ending data,  roomtype, gender, location and the user contact and name who posted it.
+Temporary Accommodation - temporary accommodations posted in whatsapp groups with rent, starting date, ending data, roomtype, gender, location and the user contact and name who posted it.
 
 User - user name and user contact which is used as primary key for identifying which user posted the accommodation
 
-
-Data gathering 
-
+Data gathering
 
 Dataset - Realworld data for Temporary and permanent accommodation csv file gathered from whatsapp groups, google forms and scrapped from websites for permanent accommodations
 
 Datasets gathered as csv files from whatsapp are imported as pandas dataframe to clean and validate
 
- permanent and temporary accommodations dataframe shape and info are displayed for data types
+permanent and temporary accommodations dataframe shape and info are displayed for data types
 
 Rent column in data frame are cleaned by removing dollar symbols and trailing spaces and made as type int for both temporary and permanent accommodations
 
-Missing values for rent are filled with mean value from the data frame 
+Missing values for rent are filled with mean value from the data frame
 
-Missing values for str are replaced with empty strings 
+Missing values for str are replaced with empty strings
 
 After all data is cleaned all dataframe columns are casted into respective data types
 
-
-Data visualisation 
-
+Data visualisation
 
 Data is visualised with matplotlib libary on four use cases
 
@@ -210,17 +194,23 @@ Temporary accommodation use case
 
 4. Scatter plot to visualise the rent range distribution accross localities
 
-
-
 Importing data to database
 
 Data is inserted to respective tables from their dataframes using sqlalchemy
-
 
 Updated database Schema
 
 <img src="./diagrams/accommodationDB.png">
 
+# Assignment 4
+
+Data base normalization
+
+https://docs.google.com/document/d/1g8-yVlcQFutDTneYTVYy14SL6dA5yaIXRBy0p1E3tAE/edit
+
+Normalized table visualisation
+
+<img src="./assignment4/diagrams/accommodationDatabase.png">
 
 # Final Project Report
 
